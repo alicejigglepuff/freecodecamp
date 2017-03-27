@@ -1,39 +1,42 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Danny</title>
-	<link rel="stylesheet" type="text/css" href="CSS/Stylesheet.css">
-</head>
+	<title>Survey Form</title>
+	<link type="text/css" rel="stylesheet" href="css/Stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="css/animate.css">
+
+
+ </head>
 
 <body>
-	<h1>California Love Story: Danny &amp; Mian</h1>
-
-	<h2>In the beginning...</h2>
 	
-	<div class="first">
-	  	<div class="picture1">
-    	   <img src="img/sexandthecity.jpg"/>
- 		</div>
- 		<div class="paragraph1">
- 		<em style="font-size: 36px">It</em> seems like a fashion that women in New York stopped believing in heterosexual relationships. My best friends are two of them. Beautiful, independent, and incredibly intelligent, my two friends are both PhDs and they are both very mean, cynical, and sarcastic at the same time. I got used to being mocked at by them when I talked about my longings for marriage. But they decided they judged my IQ unfairly when I told them, <q>How are you supposed to get half of their property if you only date without getting marriage</q>.<br>
- 		<br>
- 		<em style="font-size: 36px">Freshly</em> graduated from college and just got my very first job, I am determined to be a career-wise successfuly woman. I am determined not to waste all my time on relationships that lead to nowhere as I did in the past ten years when my peers are learning new skills, doing internships, and becoming more interesting people. Yes, if these words look familiar to you, you are either a girl like me, who had a couple of relationships that totally consumed you, or you are a also big fun of <em>Eat Pray Love</em>.<br>
- 		<br>
- 		</div>
-	</div>
+	<form>
+		<h1>Survey</h1>
+		<h2>Which cities have you visited</h2>
+			<input type="checkbox" class="country" value="paris">Paris<br>
+			<input type="checkbox" class="country" value="beijing">Beijing<br>
+			<input type="checkbox" class="country" value="newyork">New York City<br>
+			<input type="checkbox" class="country" value="san francisco">San Francisco<br>
 
-	<div>
-		<p>
-			
-		</p>
-	</div>
-	
+		<h2>What's your favorite color?</h2>
+		<select id="color">
+			<option class='color' value="void">Choose team color</option>
+			<option class='color' value="pink">Pink</option>
+			<option class='color' value="blue">Blue</option>
+			<option class='color' value="purple">Purple</option>
+			<option class='color' value="black">Black</option>
+		</select>
 
+		<h2>What's your dream pet</h2>
+			<input class='pet' type="radio" name="pet" value="dog">Dog<br>
+			<input class='pet' type="radio" name="pet" value="cat">Cat<br>
+			<input class='pet' type="radio" name="pet" value="tiger">Tiger<br>
+			<input class='pet' type="radio" name="pet" value="dinosaur">Dinosaur<br>
 
-	
-
-
+		<button type="button" onclick="submitForm()">Submit</button>
+	</form>		
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
