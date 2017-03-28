@@ -1,42 +1,515 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Survey Form</title>
-	<link type="text/css" rel="stylesheet" href="css/Stylesheet.css">
-	<link type="text/css" rel="stylesheet" href="css/animate.css">
+    <title>Mian Wang Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Resume & Cv">
+    <meta name="keywords" content="business, personal, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">    
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css"/>
+ 	<link rel="stylesheet" href="owl-carousel/owl.carousel.css"/>       
+     
+    <!-- Google Web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900,700" rel="stylesheet" type="text/css">
+    
+    <!-- Font icons -->
+    <link rel="stylesheet" href="icon-fonts/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-
- </head>
+</head>
 
 <body>
-	
-	<form>
-		<h1>Survey</h1>
-		<h2>Which cities have you visited</h2>
-			<input type="checkbox" class="country" value="paris">Paris<br>
-			<input type="checkbox" class="country" value="beijing">Beijing<br>
-			<input type="checkbox" class="country" value="newyork">New York City<br>
-			<input type="checkbox" class="country" value="san francisco">San Francisco<br>
 
-		<h2>What's your favorite color?</h2>
-		<select id="color">
-			<option class='color' value="void">Choose team color</option>
-			<option class='color' value="pink">Pink</option>
-			<option class='color' value="blue">Blue</option>
-			<option class='color' value="purple">Purple</option>
-			<option class='color' value="black">Black</option>
-		</select>
+<!-- Preloading --> 
+<div id="preloader">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
 
-		<h2>What's your dream pet</h2>
-			<input class='pet' type="radio" name="pet" value="dog">Dog<br>
-			<input class='pet' type="radio" name="pet" value="cat">Cat<br>
-			<input class='pet' type="radio" name="pet" value="tiger">Tiger<br>
-			<input class='pet' type="radio" name="pet" value="dinosaur">Dinosaur<br>
 
-		<button type="button" onclick="submitForm()">Submit</button>
-	</form>		
-	<script type="text/javascript" src="js/main.js"></script>
+
+<!-- Header -->
+<header>
+	<div class="container">
+       	<div class="logo"><i id="turnRed" onclick="turnRed() " class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i></div>
+        <a href="#" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>      
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav id="full-menu" class="style2">
+    <div class="menu-container">
+        <a href="#" class="menu-close"></a>
+        <div class="menu-holder">
+            <ul class="full-menu">
+                <li class="scroll">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="scroll">
+                    <a href="#about">About Me</a>
+                </li>
+                <li class="scroll">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="scroll">
+                    <a href="#resume">Experience Navigation</a>
+                </li>
+                <li class="scroll">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>									
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+
+<section id="home" class="home">
+	<div class="container">
+    	<div class="col-md-12">
+        	<div class="home-inner">
+                <div class="home-content" id="about-link">
+                    <h1 class="home-title">Hi, I am <span>Mian Wang</span> </h1>
+                    <h2 class="home-subtitle">Front-end Engineer and Data Analyst</h2>
+                    <a class="home-down bounce" href="#about"><i class="fa fa-angle-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+	<div class="container">
+    	<div class="shape-bg">
+            <h2 class="section-title bottom_30">About Me</h2> 
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- informations -->
+                    <!-- <ul class="about-info">
+                        <li><span>Full Name :</span> Mian Wang </li>
+                        <li><span>Website :</span> www.mianwangcornell.com</li>
+                        <li><span>Email :</span> mian.wang.eit@gmail.com</li>
+                        <li><span>Location :</span> San Francisco Bay Area</li> 
+                    </ul> -->
+                    <img src="images/mian.jpg">
+                    
+                </div>
+                <!-- Story -->
+                <div class="col-md-8 about-text">
+                    <p><b>Engineering is all about love; designing is all about people.</b><br><br>
+My name is Mian. I love designing, from picking up a table runner for home decoration to developing apps with cool functions, from choosing a theme color for presentation slides to putting up an interactive webpage. I adore the beauty of coding and I enjoy exploring and sorting data. I am a certified Engineer in Training with a Master of Science degree from Cornell University. Overtime, I discovered my true passion and strength in UI/UX design, web development and data analysis.
+                <br>So we beat on <i class="fa fa-heartbeat" aria-hidden="true"></i> boats against the current.
+</p>
+                <div class="social top_30">
+                    <a class="linkedin" href="http://www.linkedin.com/in/engineermian"><i class="fa fa-linkedin"></i> </a>       
+<!--                     <a class="email" href="#"><i class="fa fa-envelope"></i> </a> -->                    <a class="github" href="http://www.github.com/alicejigglepuff"><i class="fa fa-github-alt" aria-hidden="true"></i>
+ </a> 
+                    <a class="behance" href="http://www.codepen.io/alicejigglypuff"><i class="fa fa-codepen" aria-hidden="true"></i>
+ </a>   
+                </div>
+                <a href="resume/MianWang.pdf">
+                <button class="site-btn top_30">DOWNLOAD RESUME </button></a>
+                </div>
+
+                <!-- Skills -->
+                <!-- <div class="col-md-4">
+                    <ul class="skill-list">
+                        <li> 
+                            <h3>Photoshop</h3>
+                            <div class="progress">
+                                <div class="percentage" style="width:80%;"></div>
+                            </div>
+                        </li>
+                        <li> 
+                            <h3>Dreamviewer</h3>
+                            <div class="progress">
+                                <div class="percentage" style="width:60%;"></div>
+                            </div>
+                        </li>
+                        <li> 
+                            <h3>After Effect</h3>
+                            <div class="progress">
+                                <div class="percentage" style="width:30%;"></div>
+                            </div>
+                        </li>
+                        <li> 
+                            <h3>Illustrator</h3>
+                            <div class="progress">
+                                <div class="percentage" style="width:75%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+ -->
+               
+
+                <!-- Skills -->  
+                
+                <div class="col-md-12 services">
+
+                <h2 class="section-title ">Skills</h2>
+                    <div class="row">
+                        <!-- application --> 
+                        <!-- <div class="service col-md-3 col-sm-6 col-xs-6">
+                            <i class="fa fa-search"></i>
+                            <div class="ser-text">
+                                <b>Data Analysis</b> -->
+                                <!-- <p>Duis vitae odio gravida</p> -->   
+                            <!-- </div>                                  
+                        </div> -->
+                        <!-- web design --> 
+                        <!-- <div class="service col-md-3 col-sm-6 col-xs-6">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <div class="ser-text">
+                                <b>Web/Mobile Design</b> -->
+                                <!-- <p>Mauris eleifend dapibus</p>  -->  
+                            <!-- </div>                                  
+                        </div> -->
+                        <!-- User Experience --> 
+                       <!--  <div class="service col-md-3 col-sm-6 col-xs-6">
+                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                            <div class="ser-text">
+                                <b>User Experience</b> -->
+                               <!--  <p>Curabitur euismod sapien</p>   --> 
+                            <!-- </div>                                  
+                        </div> -->
+                        <!-- development --> 
+                        <!-- <div class="service col-md-3 col-sm-6 col-xs-6">
+                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                            <div class="ser-text"> 
+                                <b>Development</b> -->
+                                <!-- <p>Etiam vitae condimentum</p>    -->
+                            <!-- </div>                                  
+                        </div> -->
+                    </div> <!-- .row end -->
+                </div> <!-- .col-md-12 .services end -->
+             <section class="technical" id="technical">
+            <div class="container">
+              <!-- <div class="heading">
+                <h2 class="section-title bottom_30">Technical Skills</h2>
+              </div> -->
+              <div class="row">
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="99"> <span class="percent"></span> </span>
+                    <h4>HTML &amp CSS</h4>
+                    <p>i.e. Responsive design, animation, media queries and bootstraps </p>
+                  </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="99"> <span class="percent"></span> </span>
+                    <h4> jQuery</h4>
+                    <p>i.e. animations and dynamic effects</p>
+                  </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="99"> <span class="percent"></span> </span>
+                    <h4>Javascript</h4>
+                    <p>i.e. User interface and user experience, AngularJS and JSON</p>
+                  </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="99"> <span class="percent"></span> </span>
+                    <h4>R</h4>
+                    <p>i.e. Regression, hypothesis testing and ggplot</p>
+                  </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="99"> <span class="percent"></span> </span>
+                    <h4>Excel VBA</h4>
+                    <p>i.e. VBA programming, regressions, solver, functions such as vlookupp>
+                  </div>
+                </div>
+                <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                  <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="99"> <span class="percent"></span> </span>
+                    <h4>PHP / MySQL</h4>
+                    <p>database management</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--technical end-->          
+            </div> <!-- .row end -->
+        </div>
+    </div> <!-- .container .shape-bg end -->
+</section>
+
+ 
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+	<div class="container">
+        <h2 class="section-title bottom_30 top_60">My Portfolio</h2>
+        
+         <!-- Portfolio Filter -->
+        <div class="portfolio_filter">
+            <ul>
+                <li class="select-cat" data-filter="*">All</li>
+                <li data-filter=".web-design">Web Design</li>
+                <li data-filter=".application">Application Development</li>
+                <li data-filter=".development">Data Analysis and Database Management</li>
+            </ul>
+        </div> <!-- .portfolio-filter .pull-left end -->
+        <div class="portfolio_items row"> 		
+            <div class="single_item application col-md-4 col-sm-12 col-xs-12">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <a href="Projects/ToDoList/index.html"><h3> Efficiency App </h3></a>
+                        <!-- <p>This application allows you to add to-do items and delete items that you finish. To-do items are devided into two groups: work &amp goals, family &amp dreams.</p> -->
+                        <a href="Projects/ToDoList/index.html" class="link"><i class="fa fa-link"></i></a>
+                        <a href="images/work-big-1.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
+                    </div>
+                    <img src="images/work-big-1.jpg" alt="" />
+                </div>
+            </div>
+            
+            <div class="single_item web-design col-md-4 col-sm-12 col-xs-12">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <a href="Projects/wedding/index.html" ><h3> Our Wedding Website </h3></a>
+                        <p></p>
+                        <a href="Projects/wedding/index.html" class="link"><i class="fa fa-link"></i></a>
+                        <a href="Projects/wedding/index.html" class="image-link lightbox"> <i class="fa fa-search"></i></a>
+                    </div>
+                    <img src="images/work-big-2.jpg" alt="" />
+                </div>
+            </div>
+            
+            <div class="single_item web-design col-md-4 col-sm-12 col-xs-12">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <a href="Projects/SexAndTheCity/index.html"><h3> Sex and the City </h3>
+                        <!-- <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p> -->
+                        <a href="Projects/SexAndTheCity/index.html" class="link"><i class="fa fa-link"></i></a>
+                        <a href="images/work-big-3.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
+                    </div>
+                    <img src="images/work-big-3.jpg" alt="" />
+                </div>
+            </div>
+            
+            <div class="single_item application col-md-4 col-sm-12 col-xs-12">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <a href="Projects/zodiac/index.html"><h3> What's your horoscope? </h3></a>
+                        <!-- <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p> -->
+                        <a href="Projects/Zodiac/index.html" class="link"><i class="fa fa-link"></i></a>
+                        <a href="images/work-big-4.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
+                    </div>
+                    <img src="images/work-big-4.jpg" alt="" />
+                </div>
+            </div>
+            
+            <div class="single_item application col-md-4 col-sm-12 col-xs-12">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <a href="Projects/MonetQuiz/index.html"><h3> Quiz on Facts of Claude Monet</h3></a>
+                        <!-- <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p> -->
+                        <a href="Projects/MonetQuiz/index.html" class="link"><i class="fa fa-link"></i></a>
+                        <a href="images/work-big-5.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
+                    </div>
+                    <img src="images/work-big-5.jpg" alt="" />
+                </div>
+            </div>
+            
+            <div class="single_item web-design col-md-4 col-sm-12 col-xs-12">
+                <div class="work-inner">
+                    <div class="work-overlay">
+                        <a href="Projects/FlatPortfolio/index.html"><h3> Flat Portfolio Template Replica</h3></a>
+                        
+                        <a href="Projects/FlatPortfolio/index.html" class="link"><i class="fa fa-link"></i></a>
+                        <a href="images/work-big-6.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
+                    </div>
+                    <img src="images/work-big-6.jpg" alt="" />
+                </div>
+            </div>
+                  
+        </div> <!-- .portfolio_items end -->   
+    </div><!-- .conteiner end -->
+</section>
+
+
+<!-- Resume Section -->
+<section id="resume">
+	<div class="container">
+    	<h2 class="section-title bottom_30 top_60 bottom_60">My Timeline</h2>
+        <!-- education -->
+        <div class="resume-education col-md-6">
+        	<div class="row">
+                <div class="rounded-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="resume-out">
+                    <div class="resume-info">
+                        <h2 class="info-title">Codify Academy</h2>
+                        <span class="info-date">Aug 2016 - Present </span>
+                        <p>At Codify Academy, I learned webpage design and web application development using HTML, CSS, JQuery and Javascript.</p>
+                    </div> <!-- .resume-info -->
+                    <div class="resume-info">
+                        <h2 class="info-title">Santa Clara Valley Water District</h2>
+                        <span class="info-date">Oct 2015 - Present </span>
+                        <p>I designed interactive spreadsheets to automatically grab, log, analyze and graph data on click of a button; I created real-time dashboards for water quality data monitoring. </p>
+                    </div> <!-- .resume-info -->
+                    <div class="resume-info">
+                        <h2 class="info-title">Cornell University</h2>
+                        <span class="info-date">Aug 2013 - Aug 2015 </span>
+                        <p>Master of Science in Environmental Engineering</p>
+                        <p>At Cornell, I learned how to be a researcher. My paper about my work done at Helbling Research Group was published in the area's top journal, Water Research</p>
+                    </div> <!-- .resume-info -->
+                    <div class="resume-info">
+                        <h2 class="info-title">Ocean University of China</h2>
+                        <span class="info-date">Sep 2009 - June 2013 </span>
+                        <p>Bachelor of Science in Environmental Sciences </p>
+                        <p>In my first coding class, Introduction to Fortran, I got an A+. </p>
+                    </div> <!-- .resume-info -->
+                </div> <!-- .resume-out end -->
+            </div> <!-- .row end -->
+        </div> <!-- .resume-education .col-md-6 -->
+        
+    </div>
+</section>
+
+<!-- Testimonial -->
+<!-- <section id="testimonial">
+	<div class="container">  
+    	<div class="col-md-10 col-md-offset-1">  	
+            <div id="owl-demo" class="owl-carousel owl-theme">          
+              <div class="item">
+                  <div class="testi-image">		
+                    <img src="images/testimonial-1.jpg" alt="">
+                  </div> 
+                  <div class="testi-content">
+                    <span>CEO & FOUNDER</span>
+                    <h4>EDVARD RICHARDSON </h4>
+                    <p>Proin vel euismod urna, eget hendrerit augue. Ut eget volutpat mi. Sed dignissim nunc feugiat pharetra gravida. Maecenas dolor nisi, ultrices vitae ultrices semper, cursus id mauris. Donec sit amet molestie enim. Cras cursus, orci at scelerisque feugiat, turpis mauris gravida diam. </p>
+                  </div>          
+              </div> 
+              <div class="item">
+                  <div class="testi-image">		
+                    <img src="images/testimonial-2.jpg" alt="">
+                  </div> 
+                  <div class="testi-content">
+                    <span>CEO & FOUNDER</span>
+                    <h4>NATALIA RICHARDSON </h4>
+                    <p>Proin vel euismod urna, eget hendrerit augue. Ut eget volutpat mi. Sed dignissim nunc feugiat pharetra gravida. Maecenas dolor nisi, ultrices vitae ultrices semper, cursus id mauris. Donec sit amet molestie enim. Cras cursus, orci at scelerisque feugiat, turpis mauris gravida diam. </p>
+                  </div>          
+              </div> 
+              <div class="item">
+                  <div class="testi-image">		
+                    <img src="images/testimonial-3.jpg" alt="">
+                  </div> 
+                  <div class="testi-content">
+                    <span>CEO & FOUNDER</span>
+                    <h4>ALBERTO RICHARDSON </h4>
+                    <p>Proin vel euismod urna, eget hendrerit augue. Ut eget volutpat mi. Sed dignissim nunc feugiat pharetra gravida. Maecenas dolor nisi, ultrices vitae ultrices semper, cursus id mauris. Donec sit amet molestie enim. Cras cursus, orci at scelerisque feugiat, turpis mauris gravida diam. </p>
+                  </div>          
+              </div>                               
+            </div>  <!.owl-carousel .owl-theme --> 
+         <!-- .col-md-10 .col-md-offset-1 end -->    
+    <!-- </div> --> <!-- .container end -->
+<!-- </section>  --> 
+
+<section id="contact">
+	<div class="container">
+    	<h2 class="section-title bottom_30 top_60 bottom_60">Contact Me</h2>
+    </div>
+    
+	<div class="container">
+    	<div class="shape-bg">
+            <div class="col-md-6 contact-informations">
+                <div class="row">
+                    <h5 class="contact-titles">CONTACT INFORMATIONS</h5>
+                    <ul>
+                        <li>I would love to meet up and exchange ideas with you.</li>
+                        <!-- <li><i class="fa fa-phone"></i>1 (404)376-5260 </li> -->
+                        <li><i class="fa fa-envelope-o"></i>mian.wang.eit@gmail.com</li>
+                        <li><i class="fa fa-map-marker"></i>San Francisco Bay Area</li>
+                    </ul>
+                    <!-- <div class="social-contact">
+                   		<h5 class="contact-titles">Social Links</h5>
+                        <a class="facebook" href="#"><i class="fa fa-facebook"></i> </a>       
+                        <a class="twitter" href="#"><i class="fa fa-twitter"></i> </a> 
+                        <a class="dribbble" href="#"><i class="fa fa-dribbble"></i> </a> 
+                        <a class="behance" href="#"><i class="fa fa-behance"></i> </a>   
+                    </div> -->
+                </div> <!-- .row end -->
+            </div> <!-- .col-md-6 .contact-informations end --> 
+            <form class="col-md-6 contact-form" method="POST" action="mail.php">
+                <div class="row">
+                    <h5 class="contact-titles bottom_30">GET IN TOUCH</h5>
+                    <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Name">
+                    <input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="Email">
+                    <textarea name="con_message" id="con_message" class="requie form-message" placeholder="Message" rows="8"></textarea>
+                    <input id="con_submit" class="site-btn top_20 bottom_20" type="submit" value="SEND A MESSAGE">
+                </div>
+            </form> <!-- .col-md-6 .contact-form end --> 
+        </div>
+    </div>
+</section>
+
+<footer>
+	<div class="container footer">
+    	<div class="logo pull-left">
+    		<img src="images/logo.png" alt="">
+        </div>
+        <div class="copyright pull-right">
+        	<p> Copyright © 2016 <span>Mian Wang</span> All rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<!-- Javascripts -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/vendor.min.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ <script src="js/jquery.easypiechart.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<!-- Preloader Js -->
+<script type="text/javascript">
+	$(document).ready( function() {	
+				
+		$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+		
+	});
+ </script>
+
+
+
+
+
 </body>
 </html>
