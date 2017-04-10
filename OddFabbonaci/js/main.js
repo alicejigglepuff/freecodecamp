@@ -1,17 +1,17 @@
 
 function sumFibs(num) {
-  var a = 0;
-  var b = 1;
-  var i = 1;
-  var arr = [1, 1];
-  while (a<num){
-    a = Number(arr[i-1]) + b; 
-    arr.push(a);
-    b = a;
-    i += 1;
 
+  var arr = [1, 1];
+  while (arr[arr.length-2]+arr[arr.length-1]<num){
+    arr.push(arr[arr.length-2]+arr[arr.length-1]);
   }
   console.log(arr);
-}
+  
 
+  var odd = arr.reduce(function(prev, curr){
+    if (curr%2 !== 0) {return prev + curr;}
+      else {return prev;}
+  });
+  console.log(odd);
+}
 sumFibs(10);
